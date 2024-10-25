@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Concept Clear</title>
+		<style>
+			button {
+				/* property: value; */
+				background-color: black;
+			}
+
+			.test {
+				background-color: red;
+			}
+
+			#unique {
+				background-color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<label for="shirt_sizes">Choose a Shirt Size:</label>
+
+			<select name="shirt_sizes" id="shirt_sizes">
+				<option value="xl">XL</option>
+				<option value="sm">SM</option>
+				<option value="lg" selected>LG</option>
+			</select>
+
+			<!-- Password -->
+			<input
+				type="password"
+				name="pass"
+				id="pass"
+				value="1234"
+				required
+			/>
+
+			<br /><br />
+			<label for="gender">Select Your Gender</label><br />
+			<input type="radio" id="male" name="gender" value="Male" />
+			<label for="male">Male</label><br />
+			<input type="radio" id="female" name="gender" value="Female" />
+			<label for="female">Female</label><br />
+
+			<input
+				type="email"
+				name="email"
+				id="email"
+				placeholder="Enter your mail"
+				value="abc@gmail.com"
+				readonly
+			/>
+
+			<button class="test" type="submit">Submit</button>
+			<button type="Reset">Reset</button>
+		</form>
+
+		<h1>Fill out the form</h1>
+		<button class="test" id="unique" style="background-color: blue">
+			<a href="https://www.gmail.com" target="_blank"
+				>Click to open the form</a
+			>
+		</button>
+	</body>
+</html>
